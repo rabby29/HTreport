@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:text="User ID:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/groupid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userid"
+        android:layout_alignBottom="@+id/userid"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:text="Group ID:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/months_unvisitedfamilies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userid"
+        android:layout_below="@+id/userid"
+        android:layout_marginTop="26dp"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pic Code:" />
+
+    <TextView
+        android:id="@+id/visitedfamilies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totalfamaies"
+        android:layout_below="@+id/totalfamaies"
+        android:layout_marginTop="42dp"
+        android:text="Admin Access"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/totalfamaies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="32dp"
+        android:text="Phone No:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/months_unvisitedfamilies"
+        android:layout_below="@+id/months_unvisitedfamilies"
+        android:layout_marginTop="26dp"
+        android:text="Email:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/pincode_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="pin" />
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/pincode_edittext"
+        android:ems="10"
+        android:hint="example@email.com"
+        android:inputType="textEmailAddress" >
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/phone_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalfamaies"
+        android:layout_alignBottom="@+id/totalfamaies"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="555.555.555" />
+
+    <TextView
+        android:id="@+id/adminaccess_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/visitedfamilies"
+        android:layout_alignBottom="@+id/visitedfamilies"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/visitedfamilies"
+        android:text="Granted"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/leavegroup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visitedfamilies"
+        android:layout_marginTop="42dp"
+        android:layout_toRightOf="@+id/months_unvisitedfamilies"
+        android:text="Leave Group" />
+
+</RelativeLayout>

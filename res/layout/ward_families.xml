@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/months_unvisitedfamilies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/firstname_edittext"
+        android:layout_alignBottom="@+id/firstname_edittext"
+        android:layout_alignParentLeft="true"
+        android:text="Add Family:" />
+
+    <EditText
+        android:id="@+id/firstname_edittext"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/months_unvisitedfamilies"
+        android:ems="10"
+        android:hint="Lastname"
+        android:inputType="textPersonName"
+        android:textSize="13dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/lastname_edittext"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/firstname_edittext"
+        android:ems="10"
+        android:hint="Firstname(s)"
+        android:inputType="textPersonName"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/add_family_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lastname_edittext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:text="Add"
+        android:textColor="@color/blue" />
+
+    <ListView
+        android:id="@+id/unasingedfamilies_listview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2" >
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/assingedfamilies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/totalfamaies" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/firstname_edittext"
+        android:background="@color/gray"
+        android:text="Unassigned Families:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/totalfamaies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/unasingedfamilies_listview"
+        android:background="@color/gray"
+        android:text="Assinged Families:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

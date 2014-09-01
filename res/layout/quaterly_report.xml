@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/drawerrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="14dp"
+        android:text="Quarter:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/drawerrow"
+        android:layout_below="@+id/quarter_spinner"
+        android:layout_marginTop="16dp"
+        android:text="Year:" />
+
+    <Spinner
+        android:id="@+id/quarter_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" 
+        android:layout_toRightOf="@+id/drawerrow" />
+
+    <Spinner
+        android:id="@+id/year_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quarter_spinner"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/quarter_spinner" />
+
+    <Button
+        android:id="@+id/quarterlyreport_generate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/year_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Generate" />
+
+    <TextView
+        android:id="@+id/totalfamaies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/drawerrow"
+        android:layout_alignRight="@+id/quarterlyreport_generate_button"
+        android:layout_centerVertical="true"
+        android:text="Total Famillies:" />
+
+    <TextView
+        android:id="@+id/visitedfamilies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totalfamaies"
+        android:layout_alignRight="@+id/totalfamaies"
+        android:layout_below="@+id/totalfamaies"
+        android:layout_marginTop="16dp"
+        android:text="Families visited:" />
+
+</RelativeLayout>

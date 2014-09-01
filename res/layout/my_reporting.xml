@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/useridTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/userid" />
+
+    <ImageButton
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/ytube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/fb"
+        android:src="@drawable/youtube" />
+
+    <ImageButton
+        android:id="@+id/shrbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ytube"
+        android:src="@drawable/sharebutton" />
+
+    <TextView
+        android:id="@+id/companionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fb"
+        android:layout_marginTop="16dp"
+        android:background="@color/gray"
+        android:text="Companionship" />
+
+    <ListView
+        android:id="@+id/companionlistview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/companionName" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/editbtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/companionlistview"
+        android:background="#ffffff"
+        android:text="Edit" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editbtn"
+        android:layout_alignBottom="@+id/editbtn"
+        android:layout_alignParentLeft="true"
+        android:text="Home/Visiting Teaching Families" />
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editbtn"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/ytube"
+        android:text="August" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/month"
+        android:layout_alignBottom="@+id/month"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:text=">" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/month"
+        android:layout_alignBottom="@+id/month"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:text="&lt;" />
+
+    <ListView
+        android:id="@+id/district_setup_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/left" >
+    </ListView>
+
+</RelativeLayout>
