@@ -5,13 +5,41 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="userid">User ID:1</string>
+
+
+    <string name="changelogstr">Change Log allowes you to track changes you have made that may need to update in MLS.Once updated,you may "Clear" the changes(s) by cliking 
+        "Edit" and selecting the change to clear or by cliking "Clear All"</string>
     
-     <string-array name="drawableArray">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
+    <string-array name="list_data">
+        <item>My reporting</item>
+        <item>My Account</item>
+        <item>Group Reporting</item>
+        <item>District and Comp  Setup</item>
+        <item>Families</item>
+        <item>Teachers (HT/VT)</item>
+        <item>MLS Import(new)</item>
+        <item>Attendence</item>
+        <item>Unvisited Families</item>
+        <item>Quarterly Reports</item>
+        <item>Track Changes Log(for MLS)</item>
+        <item>FAQ</item>
+        <item>Tutorials</item>
+        <item>Rate This App</item>
+        <item>Contact US</item>
+        <item>Donate</item>
+    </string-array>
+    <string-array name="header_list">
+        <item>HT/VT Tools</item>
+        <item>Presidency Tools (Admin Only)</item>
+        <item>Reports (Admin Only)</item>
+        <item>Miscellaneous</item>
     </string-array>
     
+    <string-array name="donate_listdata">
+        <item>Donate $5</item>
+        <item>Donate $10</item>
+        <item>Donate $25</item>
+        <item>Donate $50</item>
+    </string-array>
 
 </resources>

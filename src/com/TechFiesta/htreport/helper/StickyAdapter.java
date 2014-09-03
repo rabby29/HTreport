@@ -14,31 +14,30 @@ import android.content.Context;
 
 public class StickyAdapter extends BaseAdapter implements StickyListHeadersAdapter {
 
-    private String[] countries;
+    private String[] listData;
+    private String [] headerList;
     private LayoutInflater inflater;
 
     public StickyAdapter(Context context) {
         inflater = LayoutInflater.from(context);
        
-        countries = context.getResources().getStringArray(R.array.drawableArray);
-        Log.d("gfgg", ""+countries[0]);
+        listData = context.getResources().getStringArray(R.array.list_data);
+        headerList=context.getResources().getStringArray(R.array.header_list);
+       Log.d("length", " "+listData.length+" "+headerList.length );
     }
 
     @Override
     public int getCount() {
-    	Log.d(""," length"+countries.length);
-        return countries.length;
+        return listData.length;
     }
 
     @Override
     public Object getItem(int position) {
-    	Log.d("", "get item");
-        return countries[position];
+        return listData[position];
     }
 
     @Override
     public long getItemId(int position) {
-    	Log.d("", "get itemid");
         return position;
     }
 
@@ -46,10 +45,9 @@ public class StickyAdapter extends BaseAdapter implements StickyListHeadersAdapt
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
 
-        Log.d("be", "crash?");
         if (convertView == null) {
             holder = new ViewHolder();
-            Log.d("", "crash?");
+          
             convertView = inflater.inflate(R.layout.drawerlayout, parent, false);
             holder.text = (TextView) convertView.findViewById(R.id.drawerrow1);
             convertView.setTag(holder);
@@ -57,7 +55,7 @@ public class StickyAdapter extends BaseAdapter implements StickyListHeadersAdapt
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.text.setText(countries[position]);
+        holder.text.setText(listData[position]);
 
         return convertView;
     }
@@ -65,18 +63,29 @@ public class StickyAdapter extends BaseAdapter implements StickyListHeadersAdapt
     @Override 
     public View getHeaderView(int position, View convertView, ViewGroup parent) {
         HeaderViewHolder holder;
-        Log.d("akdhak", "ada");
+        
+        int headerindex=0;
+        if(position==0||position==1){
+        	headerindex= 0;
+    	}else if(position>=2 && position<=6){
+    		headerindex= 1;
+    	}else if(position>=7 && position<=10){
+    		headerindex= 2;
+    	}else if(position>=11 && position<=15){
+    		headerindex= 3;
+    	}
+        
         if (convertView == null) {
             holder = new HeaderViewHolder();
            
-            convertView = inflater.inflate(R.layout.drawerlayout, parent, false);
-            holder.text = (TextView) convertView.findViewById(R.id.drawerrow1);
+            convertView = inflater.inflate(R.layout.nav_menu_header, parent, false);
+            holder.text = (TextView) convertView.findViewById(R.id.header_text);
             convertView.setTag(holder);
         } else {
             holder = (HeaderViewHolder) convertView.getTag();
         }
         //set header text as first char in name
-        String headerText = "" + countries[position].subSequence(0, 1).charAt(0);
+        String headerText =  headerList[headerindex];
         holder.text.setText(headerText);
         return convertView;
     }
@@ -84,8 +93,19 @@ public class StickyAdapter extends BaseAdapter implements StickyListHeadersAdapt
     @Override
     public long getHeaderId(int position) {
         //return the first character of the country as ID because this is what headers are based upon
-    	Log.d("da", "adad");
-        return countries[position].subSequence(0, 1).charAt(0);
+    	//Log.d("index ", ""+position);
+    	if(position==0||position==1){
+    		return 0;
+    	}else if(position>=2 && position<=6){
+    		return 1;
+    	}else if(position>=7 && position<=10){
+    		return 2;
+    	}else if(position>=11 && position<=15){
+    		return 3;
+    	}
+    	
+    	
+        return 0;
     }
 
     class HeaderViewHolder {
