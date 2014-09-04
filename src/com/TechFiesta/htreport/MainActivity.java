@@ -3,6 +3,7 @@ package com.TechFiesta.htreport;
 
 
 
+import com.TechFiesta.htreport.adapter.StickyAdapter;
 import com.TechFiesta.htreport.fragments.ChangeLogFragment;
 import com.TechFiesta.htreport.fragments.DistrictSetupFragment;
 import com.TechFiesta.htreport.fragments.DonateFragment;
@@ -15,7 +16,6 @@ import com.TechFiesta.htreport.fragments.QuarterlyReports;
 import com.TechFiesta.htreport.fragments.TeachersFragment;
 import com.TechFiesta.htreport.fragments.TutorialFragment;
 import com.TechFiesta.htreport.fragments.UnvisitedFamiliesFragment;
-import com.TechFiesta.htreport.helper.StickyAdapter;
 
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.app.FragmentManager;

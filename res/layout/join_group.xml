@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="16dp"
+        android:text="User ID:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="User PinCode" />
+
+    <EditText
+        android:id="@+id/user_pic_code_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userID_edittext"
+        android:layout_alignBottom="@+id/userID_edittext"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Pincode"
+        android:inputType="textPassword"
+        android:textSize="15sp" >
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/userID_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/user_pic_code_edittext"
+        android:ems="10"
+        android:hint="User ID"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/join_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/user_pic_code_edittext"
+        android:layout_below="@+id/user_pic_code_edittext"
+        android:layout_marginTop="16dp"
+        android:text="Join" />
+
+    <TextView
+        android:id="@+id/teacherpage_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userID_edittext"
+        android:layout_alignRight="@+id/join_btn"
+        android:layout_below="@+id/join_btn"
+        android:layout_marginTop="19dp"
+        android:text="Your Group ID can be obtained from a group admin (usually EQ, RS, or HP Presidency) by going to “Account Settings”." />
+
+</RelativeLayout>

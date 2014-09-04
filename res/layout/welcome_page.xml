@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Choose one of the options below to get started:" />
+
+    <Button
+        android:id="@+id/creat_group_btn"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:background="@android:color/transparent"
+        android:textColor="@color/blue"
+        android:text="Create a Group" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/creat_group_btn"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/creat_group_btn"
+        android:src="@drawable/info_icon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/creat_group_btn"
+        android:layout_alignBottom="@+id/creat_group_btn"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Choose this option if you are a leader and want to create a new HT/VT group for your ward.  This option costs $1.99."
+        
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/join_agroup_btn"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/creat_group_btn"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/transparent"
+        android:text="Join A Group"
+        android:textColor="@color/blue" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/join_agroup_btn"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/info_icon" />
+
+    <TextView
+        android:id="@+id/teacherpage_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/join_agroup_btn"
+        android:layout_alignBottom="@+id/join_agroup_btn"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Choose this option if you are joining a HT/VT group that is already created in your ward. This option is free." 
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="13sp"
+        
+        />
+
+    <Button
+        android:id="@+id/demoapp_btn"
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/join_agroup_btn"
+        android:layout_below="@+id/teacherpage_user_id"
+        android:layout_marginTop="47dp"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:background="@android:color/transparent"
+        android:textColor="@color/blue"
+        android:text="Demo App" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/demoapp_btn"
+        android:layout_toLeftOf="@+id/teacherpage_user_id"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/info_icon" />
+
+    <TextView
+        android:id="@+id/teacher_page_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/demoapp_btn"
+        android:layout_alignBottom="@+id/demoapp_btn"
+        android:layout_alignLeft="@+id/teacherpage_user_id"
+         android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="13sp"
+        
+        android:text="Choose this option if you would like to join a test group to see all the amazing features this app has to offer. Note: the demo group is reset to default settings daily." />
+
+    
+</RelativeLayout>

@@ -9,7 +9,17 @@
 
     <string name="changelogstr">Change Log allowes you to track changes you have made that may need to update in MLS.Once updated,you may "Clear" the changes(s) by cliking 
         "Edit" and selecting the change to clear or by cliking "Clear All"</string>
-    
+        
+    <string name="create_group_hit_test">Once your group is created, you will be able to invite others to your group by sending them a link via text or email. Or they can join by entering in their User ID  and Pincode, 
+        which is found by going to the teacher(s) User Profile from the "view all teachers" screen.
+        
+        See Tutorials for detailed instructions.
+        </string>
+        
+    <string name="teacherdetail1">• Standard - "HT/VT Tools only. Sees the companionship and families they have been assigned to."</string>
+    <string name="teacherdetail2">• District Leader – ""HT/VT Tools and Group Reporting screen. Can only  see and edit reports for districts that they have been assigned to as a District Leader."</string>
+    <string name="teacherdetail3">• Admin – "HT/VT Tools and Presidency Tools. Has full privileges on all screens."</string>
+    <string name="teacherdetail4">• Report Tools – "Access all screens under Report Tools. Must be already have Admin access."</string>
     <string-array name="list_data">
         <item>My reporting</item>
         <item>My Account</item>
